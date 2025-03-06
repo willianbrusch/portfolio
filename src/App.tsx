@@ -7,9 +7,13 @@ function App() {
     <>
       <Header />
       <main className="wrapper">
-        <h1>Teste</h1>
+        <h1>Oi! Meu nome é Willian!</h1>
+        <h2>
+          Sou um desenvolvedor de software com foco em desensolver soluções!
+        </h2>
         <p>Some content and stuff</p>
       </main>
+
       <footer></footer>
     </>
   );
