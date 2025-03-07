@@ -1,6 +1,5 @@
 import "./header.css";
 import { useState } from "react";
-import Modal from "react-modal";
 import { BsMoonStars } from "react-icons/bs";
 import { BsSun } from "react-icons/bs";
 
