@@ -1,4 +1,10 @@
-import { createContext, ReactNode, useContext, useState } from "react";
+import {
+  createContext,
+  ReactNode,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 
 interface ThemeContextType {
   theme: "light" | "dark";
@@ -17,8 +23,15 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
   const [theme, setTheme] = useState<"light" | "dark">("light");
 
   const handleChangeTheme = () => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
+    document.documentElement.setAttribute("data-theme", newTheme);
   };
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
 
   return (
     <ThemeContext.Provider value={{ theme, handleChangeTheme }}>

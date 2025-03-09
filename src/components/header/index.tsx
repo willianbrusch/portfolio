@@ -2,9 +2,10 @@ import "./header.css";
 import { useState } from "react";
 import { BsMoonStars } from "react-icons/bs";
 import { BsSun } from "react-icons/bs";
+import { useTheme } from "../../context";
 
 function Header() {
-  const [isDark, setIsDark] = useState(false);
+  const { theme, handleChangeTheme } = useTheme();
 
   return (
     <header className="header">
@@ -20,8 +21,8 @@ function Header() {
       </nav>
 
       <nav className="nav nav-button">
-        <a href="#" onClick={() => setIsDark(!isDark)}>
-          {isDark ? <BsMoonStars size={18} /> : <BsSun size={18} />}
+        <a href="#" onClick={() => handleChangeTheme()}>
+          {theme == "dark" ? <BsMoonStars size={18} /> : <BsSun size={18} />}
         </a>
       </nav>
     </header>
