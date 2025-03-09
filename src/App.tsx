@@ -1,6 +1,6 @@
-import { CgEnter } from "react-icons/cg";
 import "./App.css";
 import Particles from "./blocks/Backgrounds/Particles/Particles";
+import SplitText from "./blocks/TextAnimations/SplitText/SplitText";
 
 import Header from "./components/header";
 import { useTheme } from "./context";

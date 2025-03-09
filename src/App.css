@@ -1,6 +1,6 @@
 body {
   background-color: var(--background-color);
-  color: var(--text-color);
+  color: var(--text-color-primary);
 }
 
 .wrapper {
@@ -28,6 +28,7 @@ main h2 {
   font-size: 1.5rem;
   margin-left: 20px;
   margin-right: 20px;
+  color: var(--text-color-secondary);
 }
 
 @media (max-width: 768px) {
@@ -41,20 +42,22 @@ main h2 {
     font-size: 1.3rem;
     margin-left: 20px;
     margin-right: 20px;
+    color: var(--text-color-secondary);
   }
 }
 
 @media (max-width: 480px) {
   main h1 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin-left: 20px;
     margin-right: 20px;
   }
 
   main h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-left: 20px;
     margin-right: 20px;
+    color: var(--text-color-secondary);
   }
 }
 
@@ -66,14 +69,14 @@ main h2 {
 }
 
 .wrapper div button:first-child {
-  background-color: #228b22;
+  background-color: var(--primary-color);
   margin-right: 20px;
   color: white;
 }
 .wrapper div button {
   padding: 10px 40px;
   border-radius: 25px;
-  border: 1px solid #228b22;
+  border: 1px solid var(--primary-color);
   box-shadow: 0 10px 15px -3px rgba(39, 39, 42, 0.05),
     0 4px 6px -2px rgba(39, 39, 42, 0.05);
 }

@@ -1,5 +1,4 @@
 import "./header.css";
-import { useState } from "react";
 import { BsMoonStars } from "react-icons/bs";
 import { BsSun } from "react-icons/bs";
 import { useTheme } from "../../context";
