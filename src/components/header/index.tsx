@@ -9,9 +9,9 @@ function Header() {
   return (
     <header className="header">
       <nav className="nav">
-        <a href="#">Sobre</a>
-        <a href="#">Experiência</a>
-        <a href="#">Contato</a>
+        <a href="#about">Sobre</a>
+        <a href="#experience">Experiência</a>
+        <a href="#contact">Contato</a>
         {/* <p>|</p> */}
         {/* <p style={{ color: "black" }}>|</p> */}
         {/* <a onClick={() => setIsDark(!isDark)}>
