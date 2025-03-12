@@ -1,18 +1,10 @@
 import "./App.css";
 import Particles from "./blocks/Backgrounds/Particles/Particles";
-import { motion, useScroll, useTransform } from "framer-motion";
 
 import Header from "./components/header";
-import { useTheme } from "./context";
 import About from "./components/about";
 
 function App() {
-  const { theme } = useTheme();
-
-  const { scrollYProgress } = useScroll(); // Obtém progresso do scroll
-  const x = useTransform(scrollYProgress, [0, 0.6], ["50vw", "0vw"]); // 200px para fora → 0 (posição normal)
-  const opacity = useTransform(scrollYProgress, [0, 0.6], [0, 1]); // Opacidade de 50% a 100%
-
   return (
     <>
       <Header />
