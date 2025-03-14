@@ -1,29 +1,42 @@
 import "./App.css";
 import Particles from "./blocks/Backgrounds/Particles/Particles";
+import photo_perfil from "./assets/photo_perfil.jpeg";
 
 import Header from "./components/header";
 import About from "./components/about";
+import { Element } from "react-scroll";
+import Experience from "./components/experience";
+
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import Footer from "./components/footer";
 
 function App() {
   return (
     <>
       <Header />
-      <div style={{ width: "100%", height: "100%", position: "absolute" }}>
+      <div
+        style={{
+          width: "100%",
+          height: "280%",
+          position: "absolute",
+          zIndex: "-1",
+        }}
+      >
         <Particles
           particleColors={["#228B22", "#228B22"]}
-          particleCount={200}
+          particleCount={400}
           particleSpread={10}
-          speed={0.5}
-          particleBaseSize={300}
-          moveParticlesOnHover={true}
+          speed={0.2}
+          particleBaseSize={500}
+          moveParticlesOnHover={false}
           alphaParticles={true}
-          disableRotation={true}
+          disableRotation={false}
         />
       </div>
 
       <main className="wrapper">
         <img
-          src="https://avatars.githubusercontent.com/u/53385347?s=400&u=b7ab21ccb70c533c61ec6a8ad4d8dc2d676f44e8&v=4"
+          src={photo_perfil}
           style={{
             borderRadius: "50px",
             width: "100px",
@@ -36,30 +49,49 @@ function App() {
           Meu foco é construir sistemas performáticos e bem estruturados,
           aplicando as melhores práticas de desenvolvimento.
         </h2>
-        <div>
-          <button>github</button>
-          <button>linkedin</button>
+        <div className="button-container">
+          <a
+            className="banner-button"
+            href="https://github.com/willianbrusch"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github <FaGithub />
+          </a>
+          <a
+            className="banner-button"
+            href="https://www.linkedin.com/in/willianbrusch-desenvolvedor/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            linkedin
+            <FaLinkedin />
+          </a>
         </div>
-        <About />
+        <Element style={{ margin: "0px" }} name="about">
+          <About />
+        </Element>
         <p
           style={{
             width: "100vw",
             height: "30px",
-            backgroundColor: "green",
+            backgroundColor: "#228B22",
             borderRadius: "0px 0px 0px 25px",
           }}
         ></p>
-        <article id="experience">
-          <h3>Experiêcia</h3>
-
-          <p>
-            Trabalho com desenvolvimento de software desde 2020. Nesse período
-            já trabalhei com diversas tecnologias, tanto no frontend como no
-            backend.
-          </p>
-        </article>
+        <Element style={{ margin: "0px" }} name="experience">
+          <Experience />
+        </Element>
+        <p
+          style={{
+            width: "100vw",
+            height: "30px",
+            backgroundColor: "#228B22",
+            borderRadius: "0px 0px 0px 25px",
+          }}
+        ></p>
       </main>
-      <footer></footer>
+      <Footer />
     </>
   );
 }

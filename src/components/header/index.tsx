@@ -3,15 +3,17 @@ import { BsMoonStars } from "react-icons/bs";
 import { BsSun } from "react-icons/bs";
 import { useTheme } from "../../context";
 
+import { Link } from "react-scroll";
+
 function Header() {
   const { theme, handleChangeTheme } = useTheme();
 
   return (
     <header className="header">
       <nav className="nav">
-        <a href="#about">Sobre</a>
-        <a href="#experience">Experiência</a>
-        <a href="#contact">Contato</a>
+        <Link to="about">Sobre</Link>
+        <Link to="experience">Experiência</Link>
+        <Link to="contact">Contato</Link>
         {/* <p>|</p> */}
         {/* <p style={{ color: "black" }}>|</p> */}
         {/* <a onClick={() => setIsDark(!isDark)}>

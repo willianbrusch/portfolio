@@ -1,24 +1,54 @@
+import { useRef } from "react";
 import { useTheme } from "../../context";
 import "./about.css";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 
 function About() {
   const { theme } = useTheme();
 
-  const { scrollYProgress } = useScroll(); // Obtém progresso do scroll
-  const x = useTransform(scrollYProgress, [0, 0.6], ["50vw", "0vw"]); // 200px para fora → 0 (posição normal)
-  const opacity = useTransform(scrollYProgress, [0, 0.6], [0, 1]); // Opacidade de 50% a 100%
+  const AboutRef = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: AboutRef,
+    offset: ["start end", "center 50%"], // Quando o topo do elemento entra e quando sai da tela
+  });
+
+  const x = useSpring(
+    useTransform(scrollYProgress, [0, 0.6], ["50vw", "0vw"]),
+    { stiffness: 50, damping: 20 }
+  );
+
+  const opacity = useSpring(useTransform(scrollYProgress, [0, 0.6], [0, 1]), {
+    stiffness: 50,
+    damping: 20,
+  });
 
   return (
-    <motion.article id="about" className="about" style={{ x, opacity }}>
+    <motion.section
+      ref={AboutRef}
+      id="about"
+      className="about"
+      style={{ x, opacity }}
+    >
       <h3>Sobre</h3>
       <p>
         Trabalho com desenvolvimento de software desde 2020. Nesse período já
         trabalhei com diversas tecnologias, tanto no frontend como no backend.
       </p>
       <br />
-      <p>Tecnologias com que trabalho</p>
+      <h4>Educação</h4>
       <br />
+      <p>Tecnologia em Análise e Desenvolvimento de Sistemas</p>
+      <p>Centro Universitário UniOpet</p>
+      <p>Fevereiro 2025 - o momento</p>
+      <br />
+      <p>Curso Fullstack</p>
+      <p>Kenzie Academy</p>
+      <p>Abril 2020 - Abril 2021</p>
+      <br />
+      <h4>Tecnologias com que trabalho</h4>
+      <br />
+
       <div
         style={{
           display: "flex",
@@ -141,7 +171,7 @@ function About() {
           ></i>
         )}
       </div>
-    </motion.article>
+    </motion.section>
   );
 }
 
