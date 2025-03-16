@@ -1,18 +1,19 @@
 .about {
   width: 100%;
-  margin-top: 220px;
+  margin-top: 30px;
   padding: 20px;
 
   background: rgba(var(--background-color), 0.1);
-  border: 1px solid var(--border-primary-color);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 10px 10px 0px 0px;
+  border: 1px solid var(--border-primary-color);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .about h3 {
   margin-bottom: 20px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
 
   color: var(--text-color-primary);
@@ -20,6 +21,17 @@
 
 .about p {
   text-align: justify;
+  font-size: 0.9rem;
 
   color: var(--text-color-secondary);
+}
+
+.about-bottom {
+  margin-bottom: 220px;
+
+  background: linear-gradient(to bottom, var(--secondary-color), transparent);
+  width: 100vw;
+  height: 10px;
+  background-color: var(--primary-color);
+  border-radius: 0px 0px 0px 25px;
 }

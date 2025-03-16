@@ -35,6 +35,10 @@
     font-size: 0.9rem;
     font-weight: 700;
   }
+
+  .job-info span {
+    font-size: 0.8rem;
+  }
 }
 
 .job-description-text {

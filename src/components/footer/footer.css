@@ -5,9 +5,11 @@
   display: flex;
   justify-content: center;
 
-  border-top: 1px solid var(--border-primary-color);
-  background-color: var(--primary-color);
-  color: var(--text-color-primary);
+  background-color: var(--background-color);
+  border-top: 2px solid var(--primary-color);
+  color: var(--text-color-secondary);
+
+  position: relative;
 }
 
 .footer p {

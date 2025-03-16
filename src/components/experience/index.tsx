@@ -2,6 +2,8 @@ import { useRef } from "react";
 import "./experience.css";
 
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+import { FaCloudDownloadAlt } from "react-icons/fa";
+
 import CardExperience from "../cardExperience";
 
 const companys = [
@@ -30,7 +32,7 @@ const companys = [
   {
     companyName: "Kenzie Academy",
     companyImage: "kenzie.png",
-    position: "Supervisor de Ensino React",
+    position: "Supervisor React",
     employmentPeriod: "Outubro 2021 - Maio 2022",
     description: [
       "Atuei na supervisão e suporte ao time de facilitadores de ensino, garantindo a qualidade do aprendizado e auxiliando no desenvolvimento técnico e comportamental dos alunos. Além disso, desempenhei todas as funções de um facilitador de ensino, contribuindo ativamente para a formação dos desenvolvedores.",
@@ -39,7 +41,7 @@ const companys = [
   {
     companyName: "Kenzie Academy",
     companyImage: "kenzie.png",
-    position: "Facilitador de Ensino React",
+    position: "Facilitador React",
     employmentPeriod: "Dezembro 2020 - Outubro 2021",
     description: [
       "Ministrei aulas de React e acompanhei o desenvolvimento dos alunos por meio de reuniões 1:1 recorrentes, identificando dificuldades e removendo impedimentos em seu aprendizado, além de ensinar os conceitos técnicos de React, Javascript, HTML, CSS e Git, assim como outros problemas técnicos. Também atuei na orientação sobre Soft Skills e desenvolvimento profissional, oferecendo feedbacks constantes sobre a evolução técnica e comportamental dos alunos.",
@@ -77,18 +79,26 @@ function Experience() {
   });
 
   return (
-    <motion.section
-      id="experience"
-      className="experience"
-      ref={ExperienceRef}
-      style={{ x, opacity }}
-    >
-      <h3>Experiência</h3>
+    <>
+      <motion.section
+        id="experience"
+        className="experience"
+        ref={ExperienceRef}
+        style={{ x, opacity }}
+      >
+        <h3>Experiência</h3>
 
-      {companys.map((company, index) => (
-        <CardExperience key={index} company={company} />
-      ))}
-    </motion.section>
+        {companys.map((company, index) => (
+          <CardExperience key={index} company={company} />
+        ))}
+
+        <button className="cv-dowload-button">
+          Baixar Currículo
+          <FaCloudDownloadAlt size={18} />
+        </button>
+      </motion.section>
+      <div className="about-bottom"></div>
+    </>
   );
 }
 

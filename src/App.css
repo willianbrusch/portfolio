@@ -1,6 +1,7 @@
 body,
 html {
   overflow-x: hidden;
+  position: absolute;
 }
 html {
   scroll-behavior: smooth;
@@ -33,7 +34,7 @@ main h1 {
 
 main h2 {
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-left: 20px;
   margin-right: 20px;
   color: var(--text-color-secondary);
@@ -52,6 +53,10 @@ main h2 {
     margin-right: 20px;
     color: var(--text-color-secondary);
   }
+
+  .wrapper .button-container {
+    gap: 10px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -69,35 +74,9 @@ main h2 {
   }
 }
 
-.wrapper .button-container {
-  display: flex;
-
-  margin: 20px 20px;
-  gap: 20px;
-}
-
-.banner-button:first-child {
-  background-color: var(--primary-color);
-  margin-right: 20px;
-  color: white;
-}
-.banner-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-
-  padding: 10px 40px;
-  border-radius: 25px;
-  border: 1px solid var(--primary-color);
-  box-shadow: 0 10px 15px -3px rgba(39, 39, 42, 0.05),
-    0 4px 6px -2px rgba(39, 39, 42, 0.05);
-}
-
-.banner-button:last-child {
-  color: var(--primary-color);
-}
-
-main img {
-  text-align: center;
+.particles {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
 }

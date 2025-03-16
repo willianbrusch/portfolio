@@ -24,154 +24,157 @@ function About() {
   });
 
   return (
-    <motion.section
-      ref={AboutRef}
-      id="about"
-      className="about"
-      style={{ x, opacity }}
-    >
-      <h3>Sobre</h3>
-      <p>
-        Trabalho com desenvolvimento de software desde 2020. Nesse período já
-        trabalhei com diversas tecnologias, tanto no frontend como no backend.
-      </p>
-      <br />
-      <h4>Educação</h4>
-      <br />
-      <p>Tecnologia em Análise e Desenvolvimento de Sistemas</p>
-      <p>Centro Universitário UniOpet</p>
-      <p>Fevereiro 2025 - o momento</p>
-      <br />
-      <p>Curso Fullstack</p>
-      <p>Kenzie Academy</p>
-      <p>Abril 2020 - Abril 2021</p>
-      <br />
-      <h4>Tecnologias com que trabalho</h4>
-      <br />
-
-      <div
-        style={{
-          display: "flex",
-          gap: "20px",
-          justifyContent: "space-between",
-          flexWrap: "wrap",
-        }}
+    <>
+      <motion.section
+        ref={AboutRef}
+        id="about"
+        className="about"
+        style={{ x, opacity }}
       >
-        <img
-          style={{ width: "60px" }}
-          alt="python"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"
-        />
-        {theme == "light" ? (
+        <h3>Sobre</h3>
+        <p>
+          Trabalho com desenvolvimento de software desde 2020. Nesse período já
+          trabalhei com diversas tecnologias, tanto no frontend como no backend.
+        </p>
+        <br />
+        <h4>Educação</h4>
+        <br />
+        <p>Tecnologia em Análise e Desenvolvimento de Sistemas</p>
+        <p>Centro Universitário UniOpet</p>
+        <p>Fevereiro 2025 - o momento</p>
+        <br />
+        <p>Curso Fullstack</p>
+        <p>Kenzie Academy</p>
+        <p>Abril 2020 - Abril 2021</p>
+        <br />
+        <h4>Tecnologias com que trabalho</h4>
+        <br />
+
+        <div
+          style={{
+            display: "flex",
+            gap: "20px",
+            justifyContent: "space-between",
+            flexWrap: "wrap",
+          }}
+        >
           <img
             style={{ width: "60px" }}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain-wordmark.svg"
+            alt="python"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"
           />
-        ) : (
-          <i
-            style={{ fontSize: "60px" }}
-            className="devicon-django-plain-wordmark"
-          ></i>
-        )}
-        {theme == "light" ? (
+          {theme == "light" ? (
+            <img
+              style={{ width: "60px" }}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain-wordmark.svg"
+            />
+          ) : (
+            <i
+              style={{ fontSize: "60px" }}
+              className="devicon-django-plain-wordmark"
+            ></i>
+          )}
+          {theme == "light" ? (
+            <img
+              style={{ width: "60px" }}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original-wordmark.svg"
+            />
+          ) : (
+            <i
+              style={{ fontSize: "60px" }}
+              className="devicon-flask-original-wordmark"
+            ></i>
+          )}
+          {theme == "light" ? (
+            <img
+              style={{ width: "70px" }}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/djangorest/djangorest-plain.svg"
+            />
+          ) : (
+            <i
+              style={{ fontSize: "60px" }}
+              className="devicon-djangorest-plain"
+            ></i>
+          )}
+          {theme == "light" ? (
+            <img
+              style={{ width: "80px" }}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlalchemy/sqlalchemy-original-wordmark.svg"
+            />
+          ) : (
+            <i
+              style={{ fontSize: "60px" }}
+              className="devicon-sqlalchemy-plain-wordmark"
+            ></i>
+          )}
           <img
             style={{ width: "60px" }}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original-wordmark.svg"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
           />
-        ) : (
-          <i
-            style={{ fontSize: "60px" }}
-            className="devicon-flask-original-wordmark"
-          ></i>
-        )}
-        {theme == "light" ? (
-          <img
-            style={{ width: "70px" }}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/djangorest/djangorest-plain.svg"
-          />
-        ) : (
-          <i
-            style={{ fontSize: "60px" }}
-            className="devicon-djangorest-plain"
-          ></i>
-        )}
-        {theme == "light" ? (
-          <img
-            style={{ width: "80px" }}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlalchemy/sqlalchemy-original-wordmark.svg"
-          />
-        ) : (
-          <i
-            style={{ fontSize: "60px" }}
-            className="devicon-sqlalchemy-plain-wordmark"
-          ></i>
-        )}
-        <img
-          style={{ width: "60px" }}
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-        />
-        <img
-          style={{ width: "60px" }}
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-        />
-        <img
-          style={{ width: "60px" }}
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
-        />
-        <img
-          style={{ width: "60px" }}
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
-        />
-        {theme == "light" ? (
           <img
             style={{ width: "60px" }}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
           />
-        ) : (
-          <i
-            style={{ fontSize: "60px" }}
-            className="devicon-nextjs-line-wordmark"
-          ></i>
-        )}
-        {theme == "light" ? (
           <img
             style={{ width: "60px" }}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
           />
-        ) : (
-          <i
-            style={{ fontSize: "60px" }}
-            className="devicon-nodejs-line-wordmark"
-          ></i>
-        )}
-        <img
-          style={{ width: "60px" }}
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original-wordmark.svg"
-        />
-        {theme == "light" ? (
           <img
             style={{ width: "60px" }}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
           />
-        ) : (
+          {theme == "light" ? (
+            <img
+              style={{ width: "60px" }}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg"
+            />
+          ) : (
+            <i
+              style={{ fontSize: "60px" }}
+              className="devicon-nextjs-line-wordmark"
+            ></i>
+          )}
+          {theme == "light" ? (
+            <img
+              style={{ width: "60px" }}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+            />
+          ) : (
+            <i
+              style={{ fontSize: "60px" }}
+              className="devicon-nodejs-line-wordmark"
+            ></i>
+          )}
           <img
             style={{ width: "60px" }}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original-wordmark.svg"
           />
-        )}
-        {theme == "light" ? (
-          <img
-            style={{ width: "60px" }}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg"
-          />
-        ) : (
-          <i
-            style={{ fontSize: "60px" }}
-            className="devicon-postgresql-plain-wordmark"
-          ></i>
-        )}
-      </div>
-    </motion.section>
+          {theme == "light" ? (
+            <img
+              style={{ width: "60px" }}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+            />
+          ) : (
+            <img
+              style={{ width: "60px" }}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+            />
+          )}
+          {theme == "light" ? (
+            <img
+              style={{ width: "60px" }}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg"
+            />
+          ) : (
+            <i
+              style={{ fontSize: "60px" }}
+              className="devicon-postgresql-plain-wordmark"
+            ></i>
+          )}
+        </div>
+      </motion.section>
+      <div className="about-bottom"></div>
+    </>
   );
 }
 

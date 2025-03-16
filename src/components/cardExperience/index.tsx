@@ -29,7 +29,7 @@ function CardExperience({ company }: CardExperienceProps) {
         <div>
           <div className="job-info">
             <>
-              <h4>{company.companyName}</h4> <span> - {company.position}</span>
+              <h4>{company.companyName}</h4> <span>{company.position}</span>
             </>
             <p onClick={() => setShowText(!showText)}>
               {showText == false ? (
