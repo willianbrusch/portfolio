@@ -92,10 +92,14 @@ function Experience() {
           <CardExperience key={index} company={company} />
         ))}
 
-        <button className="cv-dowload-button">
+        <a
+          href="./../../../public/assets/Willian_Brusch.pdf"
+          download="willian_brusch_cv.pdf"
+          className="cv-dowload-button"
+        >
           Baixar Currículo
           <FaCloudDownloadAlt size={18} />
-        </button>
+        </a>
       </motion.section>
       <div className="about-bottom"></div>
     </>

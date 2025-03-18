@@ -26,6 +26,10 @@
   color: var(--text-color-secondary);
 }
 
+.about h4 {
+  font-weight: 600;
+}
+
 .about-bottom {
   margin-bottom: 220px;
 
@@ -34,4 +38,17 @@
   height: 10px;
   background-color: var(--primary-color);
   border-radius: 0px 0px 0px 25px;
+}
+
+.education-card h5 {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.education-card p {
+  font-size: 0.9rem;
+}
+
+.education-card span {
+  font-size: 0.8rem;
 }

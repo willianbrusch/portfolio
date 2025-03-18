@@ -33,19 +33,42 @@ function About() {
       >
         <h3>Sobre</h3>
         <p>
-          Trabalho com desenvolvimento de software desde 2020. Nesse período já
-          trabalhei com diversas tecnologias, tanto no frontend como no backend.
+          Com mais de quatro anos de experiência no desenvolvimento de software,
+          atuo principalmente como desenvolvedor backend, utilizando tecnologias
+          como Python (Flask, Django), Node.js (NestJS), PostgreSQL, MySQL e
+          AWS. Tenho forte experiência na construção e manutenção de
+          microsserviços, desenvolvimento de APIs RESTful e automação de testes
+          com Pytest.{" "}
+        </p>
+        <br />
+        <p>
+          Além do backend, possuo habilidades em frontend, trabalhando com
+          React, Next.js, TypeScript e diversas bibliotecas para construção de
+          interfaces modernas e escaláveis. Também tenho experiência acadêmica e
+          pedagógica, tendo atuado como facilitador e supervisor de ensino em
+          React, onde ministrei aulas, criei conteúdos didáticos e orientei
+          alunos no desenvolvimento de projetos completos.{" "}
+        </p>
+        <br />
+        <p>
+          Atualmente, curso Tecnologia em Análise e Desenvolvimento de Sistemas
+          e continuo aprimorando minhas habilidades com especializações e
+          certificações na área de tecnologia.
         </p>
         <br />
         <h4>Educação</h4>
         <br />
-        <p>Tecnologia em Análise e Desenvolvimento de Sistemas</p>
-        <p>Centro Universitário UniOpet</p>
-        <p>Fevereiro 2025 - o momento</p>
+        <div className="education-card">
+          <h5>Tecnologia em Análise e Desenvolvimento de Sistemas</h5>
+          <p>Centro Universitário UniOpet</p>
+          <span>Fevereiro 2025 - o momento</span>
+        </div>
         <br />
-        <p>Curso Fullstack</p>
-        <p>Kenzie Academy</p>
-        <p>Abril 2020 - Abril 2021</p>
+        <div className="education-card">
+          <h5>Curso Fullstack</h5>
+          <p>Kenzie Academy</p>
+          <span>Abril 2020 - Abril 2021</span>
+        </div>
         <br />
         <h4>Tecnologias com que trabalho</h4>
         <br />

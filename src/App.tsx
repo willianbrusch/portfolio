@@ -7,6 +7,7 @@ import About from "./components/about";
 import Experience from "./components/experience";
 import Footer from "./components/footer";
 import InitialBanner from "./components/initialBanner";
+import Projects from "./components/projects";
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
         </Element>
         <Element name="experience">
           <Experience />
+        </Element>
+        <Element name="projects">
+          <Projects />
         </Element>
       </main>
       <Footer />

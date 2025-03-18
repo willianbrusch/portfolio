@@ -13,7 +13,7 @@ function Header() {
       <nav className="nav">
         <Link to="about">Sobre</Link>
         <Link to="experience">Experiência</Link>
-        <Link to="contact">Contato</Link>
+        <Link to="projects">Projetos</Link>
         {/* <p>|</p> */}
         {/* <p style={{ color: "black" }}>|</p> */}
         {/* <a onClick={() => setIsDark(!isDark)}>

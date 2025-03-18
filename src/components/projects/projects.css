@@ -1,0 +1,99 @@
+.projects {
+  margin-top: 30px;
+  padding: 20px;
+
+  background: rgba(var(--background-color), 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px 10px 0px 0px;
+  border: 1px solid var(--border-primary-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.projects h4 {
+  margin-bottom: 20px;
+}
+
+.card-project {
+  width: 290px;
+  height: 300px;
+  padding: 20px;
+
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid var(--border-primary-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* background: linear-gradient(145deg, #a8d07d, #acd449, #79e37e, #85cb60); */
+  /* background: linear-gradient(145deg, #a8d07d, #add154, #aee38b, #add154); */
+  background: linear-gradient(
+    145deg,
+    rgba(168, 208, 125, 0.6),
+    rgba(173, 209, 84, 0.6),
+    rgba(174, 227, 139, 0.6),
+    rgba(173, 209, 84, 0.6)
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-project h5 {
+  font-weight: 600;
+}
+
+.card-project p {
+  text-align: justify;
+  font-size: 0.8rem;
+}
+
+.about-bottom {
+  margin-bottom: 220px;
+
+  background: linear-gradient(to bottom, var(--secondary-color), transparent);
+  width: 100vw;
+  height: 10px;
+  background-color: var(--primary-color);
+  border-radius: 0px 0px 0px 25px;
+}
+
+.card-project span {
+  font-size: 0.9rem;
+  border-radius: 4px;
+  background-color: var(--background-color);
+  color: var(--text-color-primary);
+  padding: 2px;
+  margin-left: 5px;
+}
+
+.github-card-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 100px;
+  padding: 2px;
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid var(--border-primary-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.github-card-button p {
+  font-size: 1rem;
+}
+
+.github-card-button:hover {
+  background-color: var(--border-primary-color);
+}
+
+.github-card-button:hover {
+  background-color: var(--border-primary-color);
+}
