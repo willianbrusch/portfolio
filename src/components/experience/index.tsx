@@ -101,7 +101,6 @@ function Experience() {
           <FaCloudDownloadAlt size={18} />
         </a>
       </motion.section>
-      <div className="about-bottom"></div>
     </>
   );
 }

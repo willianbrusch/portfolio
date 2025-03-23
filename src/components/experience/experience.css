@@ -1,14 +1,14 @@
 .experience {
   width: 100%;
   margin-top: 30px;
+  margin-bottom: 30px;
   padding: 20px;
 
   background: rgba(var(--background-color), 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px;
   border: 1px solid var(--border-primary-color);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .experience h3 {
@@ -48,8 +48,4 @@
 
 .cv-dowload-button:active {
   background-color: var(--secondary-color);
-}
-
-.about-bottom {
-  margin-bottom: 220px;
 }

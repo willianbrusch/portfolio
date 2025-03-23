@@ -14,11 +14,11 @@ function App() {
     <>
       <div className="particles">
         <Particles
-          particleColors={["#7ca90b", "#7ca90b"]}
+          particleColors={["#def1ab", "#d4e1b0"]}
           particleCount={100}
           particleSpread={10}
           speed={0.1}
-          particleBaseSize={500}
+          particleBaseSize={300}
           moveParticlesOnHover={false}
           alphaParticles={true}
           disableRotation={false}

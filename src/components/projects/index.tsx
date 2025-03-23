@@ -33,7 +33,7 @@ function Projects() {
         id="projects"
         style={{ x, opacity }}
       >
-        <h4>Projetos</h4>
+        <h3>Projetos</h3>
         <div className="projects-container">
           <div className="card-project">
             <div>
@@ -63,7 +63,6 @@ function Projects() {
           </div>
         </div>
       </motion.section>
-      <div className="about-bottom"></div>
     </>
   );
 }

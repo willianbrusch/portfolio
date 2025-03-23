@@ -196,7 +196,6 @@ function About() {
           )}
         </div>
       </motion.section>
-      <div className="about-bottom"></div>
     </>
   );
 }
