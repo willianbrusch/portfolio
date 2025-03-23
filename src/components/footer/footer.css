@@ -6,7 +6,7 @@
   justify-content: center;
 
   background-color: var(--background-color);
-  border-top: 2px solid var(--background-color-nav);
+  border: 1px solid var(--border-primary-color);
   color: var(--text-color-secondary);
 
   position: relative;

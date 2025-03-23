@@ -45,6 +45,61 @@ function Projects() {
               </p>
               <br />
               <p>O que utilizei no projeto?</p>
+              <br />
+              <div>
+                <span>React</span>
+                <span>Css</span>
+                <span>Framer-motion</span>
+              </div>
+            </div>
+            <a
+              className="github-card-button"
+              href="https://github.com/willianbrusch/portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>Github</p>
+              <FaGithub size={20} />
+            </a>
+          </div>
+          <div className="card-project">
+            <div>
+              <h5>Portifólio</h5>
+              <br />
+              <p>
+                Projeto desenvolvido para apresentar meu portfólio pessoal e
+                destacar minhas habilidades e experiências.
+              </p>
+              <br />
+              <p>O que utilizei no projeto?</p>
+              <br />
+              <div>
+                <span>React</span>
+                <span>Css</span>
+                <span>Framer-motion</span>
+              </div>
+            </div>
+            <a
+              className="github-card-button"
+              href="https://github.com/willianbrusch/portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>Github</p>
+              <FaGithub size={20} />
+            </a>
+          </div>
+          <div className="card-project">
+            <div>
+              <h5>Portifólio</h5>
+              <br />
+              <p>
+                Projeto desenvolvido para apresentar meu portfólio pessoal e
+                destacar minhas habilidades e experiências.
+              </p>
+              <br />
+              <p>O que utilizei no projeto?</p>
+              <br />
               <div>
                 <span>React</span>
                 <span>Css</span>

@@ -49,6 +49,10 @@
   font-size: 0.8rem;
 }
 
+.card-project {
+  margin-bottom: 20px;
+}
+
 .about-bottom {
   margin-bottom: 220px;
 
@@ -61,11 +65,12 @@
 
 .card-project span {
   font-size: 0.9rem;
-  border-radius: 4px;
-  background-color: var(--background-color);
-  color: var(--text-color-primary);
-  padding: 2px;
-  margin-left: 5px;
+  border-radius: 25px;
+  border: 1px solid var(--border-primary-color);
+
+  padding: 3px 10px 3px 10px;
+
+  margin-right: 6px;
 }
 
 .github-card-button {

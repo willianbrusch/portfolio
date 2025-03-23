@@ -1,5 +1,5 @@
 import "./App.css";
-import { Element } from "react-scroll";
+import { Element, Link } from "react-scroll";
 import Particles from "./blocks/Backgrounds/Particles/Particles";
 
 import Header from "./components/header";
@@ -8,23 +8,51 @@ import Experience from "./components/experience";
 import Footer from "./components/footer";
 import InitialBanner from "./components/initialBanner";
 import Projects from "./components/projects";
+import { useEffect, useState } from "react";
+import { FaAngleUp } from "react-icons/fa6";
 
 function App() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const toggleVisibility = () => {
+    if (window.scrollY > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
+  }, []);
+
   return (
     <>
       <div className="particles">
         <Particles
-          particleColors={["#def1ab", "#d4e1b0"]}
+          particleColors={["#005c53", "#005c53"]}
           particleCount={100}
           particleSpread={10}
           speed={0.1}
-          particleBaseSize={300}
+          particleBaseSize={200}
           moveParticlesOnHover={false}
           alphaParticles={true}
           disableRotation={false}
         />
       </div>
-      <Header />
+      <div className="scroll-to-top">
+        {isVisible && (
+          <Link to="header" className="scroll-to-top-button">
+            <FaAngleUp size={25} />
+          </Link>
+        )}
+      </div>
+      <Element name="header">
+        <Header />
+      </Element>
 
       <main className="wrapper">
         <InitialBanner />
