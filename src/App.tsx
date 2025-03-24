@@ -2,12 +2,12 @@ import "./App.css";
 import { Element, Link } from "react-scroll";
 import Particles from "./blocks/Backgrounds/Particles/Particles";
 
-import Header from "./components/header";
-import About from "./components/about";
-import Experience from "./components/experience";
-import Footer from "./components/footer";
-import InitialBanner from "./components/initialBanner";
-import Projects from "./components/projects";
+import Header from "./layout/header";
+import About from "./layout/about";
+import Experience from "./layout/experience";
+import Footer from "./layout/footer";
+import InitialBanner from "./layout/initialBanner";
+import Projects from "./layout/projects";
 import { useEffect, useState } from "react";
 import { FaAngleUp } from "react-icons/fa6";
 

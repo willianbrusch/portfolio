@@ -1,0 +1,58 @@
+.button-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 10px 40px;
+  border-radius: 25px;
+  border: 1px solid var(--primary-color);
+}
+
+/* .fullcolor {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.fullcolor:hover {
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+}
+
+.no-color {
+  color: var(--primary-color);
+}
+
+.no-color:hover {
+  background-color: var(--secondary-color);
+  color: white;
+} */
+
+.fullcolor {
+  background-color: #004d43; /* Cor base */
+  color: white;
+}
+
+.fullcolor:hover {
+  background-color: #006a5b; /* Fica mais claro no hover */
+}
+
+.fullcolor:active {
+  transform: scale(0.99); /* Dá um efeito de clique */
+}
+
+/* Botão sem fundo */
+.no-color {
+  background-color: transparent;
+  color: #004d43;
+  border-color: #004d43;
+}
+
+.no-color:hover {
+  background-color: #006a5b;
+  color: white;
+}
+
+.no-color:active {
+  transform: scale(0.99);
+}

@@ -1,0 +1,31 @@
+.section-container {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+
+  background: rgba(var(--background-color), 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid var(--border-primary-color);
+}
+
+.section-container h3 {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-weight: 500;
+
+  color: var(--text-color-primary);
+}
+
+.section-container h4 {
+  font-weight: 600;
+}
+
+.section-container p {
+  text-align: justify;
+  font-size: 0.9rem;
+
+  color: var(--text-color-secondary);
+}

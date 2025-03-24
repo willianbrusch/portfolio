@@ -1,0 +1,17 @@
+.button-container {
+  display: flex;
+  margin: 20px 20px;
+  gap: 20px;
+}
+
+.initial-banner img {
+  text-align: center;
+  border-radius: 50px;
+  width: 100px;
+  margin: 10px 20px;
+  text-align: center;
+}
+
+.initial-banner {
+  margin-bottom: 30px;
+}

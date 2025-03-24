@@ -3,6 +3,7 @@ import "./initialBanner.css";
 import photo_perfil from "./../../assets/photo_perfil.jpeg";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import ButtonPrimary from "../../components/buttonPrimary";
 
 function InitialBanner() {
   return (
@@ -14,23 +15,15 @@ function InitialBanner() {
         aplicando as melhores práticas de desenvolvimento.
       </h2>
       <div className="button-container">
-        <a
-          className="banner-button-github"
-          href="https://github.com/willianbrusch"
-          target="_blank"
-          rel="noopener noreferrer"
+        <ButtonPrimary link="https://www.linkedin.com/in/willianbrusch-desenvolvedor/">
+          Linkedin <FaLinkedin />
+        </ButtonPrimary>
+        <ButtonPrimary
+          link="https://github.com/willianbrusch"
+          variant="no-color"
         >
           Github <FaGithub />
-        </a>
-        <a
-          className="banner-button-linkedin"
-          href="https://www.linkedin.com/in/willianbrusch-desenvolvedor/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Linkedin
-          <FaLinkedin />
-        </a>
+        </ButtonPrimary>
       </div>
     </section>
   );

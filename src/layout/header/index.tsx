@@ -1,9 +1,10 @@
 import "./header.css";
-import { BsMoonStars } from "react-icons/bs";
-import { BsSun } from "react-icons/bs";
+
 import { useTheme } from "../../context";
 
 import { Link } from "react-scroll";
+import { BsMoonStars } from "react-icons/bs";
+import { BsSun } from "react-icons/bs";
 
 function Header() {
   const { theme, handleChangeTheme } = useTheme();

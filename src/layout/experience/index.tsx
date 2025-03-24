@@ -1,10 +1,10 @@
-import { useRef } from "react";
 import "./experience.css";
 
-import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import { FaCloudDownloadAlt } from "react-icons/fa";
+import CardExperience from "../../components/cardExperience";
+import SectionContainer from "../../components/sectionContainer";
 
-import CardExperience from "../cardExperience";
+import { FaCloudDownloadAlt } from "react-icons/fa";
+import ButtonPrimary from "../../components/buttonPrimary";
 
 const companys = [
   {
@@ -61,46 +61,23 @@ const companys = [
 ];
 
 function Experience() {
-  const ExperienceRef = useRef(null);
-
-  const { scrollYProgress } = useScroll({
-    target: ExperienceRef,
-    offset: ["start end", "center 50%"], // Quando o topo do elemento entra e quando sai da tela
-  });
-
-  const x = useSpring(
-    useTransform(scrollYProgress, [0, 0.6], ["50vw", "0vw"]),
-    { stiffness: 50, damping: 20 }
-  );
-
-  const opacity = useSpring(useTransform(scrollYProgress, [0, 0.6], [0, 1]), {
-    stiffness: 50,
-    damping: 20,
-  });
-
   return (
     <>
-      <motion.section
-        id="experience"
-        className="experience"
-        ref={ExperienceRef}
-        style={{ x, opacity }}
-      >
+      <SectionContainer name="experience">
         <h3>Experiência</h3>
-
         {companys.map((company, index) => (
           <CardExperience key={index} company={company} />
         ))}
-
-        <a
-          href="./../../../public/assets/Willian_Brusch.pdf"
-          download="willian_brusch_cv.pdf"
-          className="cv-dowload-button"
-        >
-          Baixar Currículo
-          <FaCloudDownloadAlt size={18} />
-        </a>
-      </motion.section>
+        <div className="experience-button-container">
+          <ButtonPrimary
+            link="./../../../public/assets/Willian_Brusch.pdf"
+            download="willian_brusch_cv.pdf"
+          >
+            Baixar Currículo
+            <FaCloudDownloadAlt size={18} />
+          </ButtonPrimary>
+        </div>
+      </SectionContainer>
     </>
   );
 }

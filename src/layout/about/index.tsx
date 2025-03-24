@@ -1,36 +1,14 @@
-import { useRef } from "react";
-import { useTheme } from "../../context";
 import "./about.css";
-import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+
+import SectionContainer from "../../components/sectionContainer";
+import { useTheme } from "../../context";
 
 function About() {
   const { theme } = useTheme();
 
-  const AboutRef = useRef(null);
-
-  const { scrollYProgress } = useScroll({
-    target: AboutRef,
-    offset: ["start end", "center 50%"], // Quando o topo do elemento entra e quando sai da tela
-  });
-
-  const x = useSpring(
-    useTransform(scrollYProgress, [0, 0.6], ["50vw", "0vw"]),
-    { stiffness: 50, damping: 20 }
-  );
-
-  const opacity = useSpring(useTransform(scrollYProgress, [0, 0.6], [0, 1]), {
-    stiffness: 50,
-    damping: 20,
-  });
-
   return (
     <>
-      <motion.section
-        ref={AboutRef}
-        id="about"
-        className="about"
-        style={{ x, opacity }}
-      >
+      <SectionContainer name="about">
         <h3>Sobre</h3>
         <p>
           Com mais de quatro anos de experiência no desenvolvimento de software,
@@ -195,7 +173,7 @@ function About() {
             ></i>
           )}
         </div>
-      </motion.section>
+      </SectionContainer>
     </>
   );
 }

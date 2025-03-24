@@ -1,8 +1,9 @@
 import "./cardExperience.css";
 
-import { motion } from "framer-motion";
-import { useState } from "react";
 import { VscTriangleRight, VscTriangleDown } from "react-icons/vsc";
+
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 type Company = {
   companyName: string;
