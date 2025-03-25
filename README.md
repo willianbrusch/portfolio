@@ -4,7 +4,7 @@ Este é meu site portifólio criado para compartilhar um pouco sobre minhas expe
 
 ## 🚀 Demonstração
 
-![Meu Portifólio](https://link-da-imagem.gif)
+<!-- ![Meu Portifólio](https://link-da-imagem.gif) -->
 
 Acesse a versão online: [willianbrusch.com](https://www.willianbrusch.com.br/)
 
