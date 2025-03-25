@@ -14,6 +14,7 @@ import { FaAngleUp } from "react-icons/fa6";
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isSafari, setIsSafari] = useState(false);
 
   const toggleVisibility = () => {
     if (window.scrollY > 300) {
@@ -30,20 +31,29 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    const userAgent = navigator.userAgent;
+    const isSafariBrowser =
+      /Safari/.test(userAgent) && !/Chrome/.test(userAgent);
+    setIsSafari(isSafariBrowser);
+  }, []);
+
   return (
     <>
-      <div className="particles">
-        <Particles
-          particleColors={["#005c53", "#005c53"]}
-          particleCount={100}
-          particleSpread={10}
-          speed={0.1}
-          particleBaseSize={200}
-          moveParticlesOnHover={false}
-          alphaParticles={true}
-          disableRotation={false}
-        />
-      </div>
+      {!isSafari && (
+        <div className="particles">
+          <Particles
+            particleColors={["#005c53", "#005c53"]}
+            particleCount={100}
+            particleSpread={10}
+            speed={0.1}
+            particleBaseSize={200}
+            moveParticlesOnHover={false}
+            alphaParticles={true}
+            disableRotation={false}
+          />
+        </div>
+      )}
       <div className="scroll-to-top">
         {isVisible && (
           <Link to="header" className="scroll-to-top-button">
