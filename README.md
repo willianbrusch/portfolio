@@ -6,7 +6,7 @@ Este é meu site portifólio criado para compartilhar um pouco sobre minhas expe
 
 <!-- ![Meu Portifólio](https://link-da-imagem.gif) -->
 
-Acesse a versão online: [willianbrusch.com](https://www.willianbrusch.com.br/)
+Acesse a versão online: [willianbrusch.com.br](https://www.willianbrusch.com.br/)
 
 ## 📦 Tecnologias Utilizadas
 
