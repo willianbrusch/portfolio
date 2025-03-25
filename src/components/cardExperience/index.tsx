@@ -1,7 +1,6 @@
 import "./cardExperience.css";
 
 import { VscTriangleRight, VscTriangleDown } from "react-icons/vsc";
-
 import { useState } from "react";
 import { motion } from "framer-motion";
 

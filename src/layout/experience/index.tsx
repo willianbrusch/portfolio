@@ -2,9 +2,9 @@ import "./experience.css";
 
 import CardExperience from "../../components/cardExperience";
 import SectionContainer from "../../components/sectionContainer";
+import ButtonPrimary from "../../components/buttonPrimary";
 
 import { FaCloudDownloadAlt } from "react-icons/fa";
-import ButtonPrimary from "../../components/buttonPrimary";
 
 const companys = [
   {
@@ -65,9 +65,10 @@ function Experience() {
     <>
       <SectionContainer name="experience">
         <h3>Experiência</h3>
-        {companys.map((company, index) => (
-          <CardExperience key={index} company={company} />
-        ))}
+        {companys &&
+          companys.map((company, index) => (
+            <CardExperience key={index} company={company} />
+          ))}
         <div className="experience-button-container">
           <ButtonPrimary
             link="./../../../public/assets/Willian_Brusch.pdf"

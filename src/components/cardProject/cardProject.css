@@ -1,0 +1,54 @@
+.card-project {
+  width: 290px;
+  height: 300px;
+  padding: 20px;
+
+  border-radius: 10px;
+  border: 1px solid var(--border-primary-color);
+  background-color: var(--background-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-project h5 {
+  font-weight: 600;
+}
+
+.card-project p {
+  text-align: justify;
+  font-size: 0.8rem;
+}
+
+.card-project span {
+  font-size: 0.9rem;
+  border-radius: 25px;
+  border: 1px solid var(--border-primary-color);
+  padding: 3px 10px 3px 10px;
+  margin-right: 6px;
+}
+
+.github-card-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 100px;
+  padding: 2px;
+  border-radius: 10px;
+  border: 1px solid var(--border-primary-color);
+}
+
+.github-card-button p {
+  font-size: 1rem;
+}
+
+.github-card-button:hover {
+  background-color: var(--border-primary-color);
+}
+
+.github-card-button:hover {
+  background-color: var(--border-primary-color);
+}

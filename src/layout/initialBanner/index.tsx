@@ -1,9 +1,9 @@
 import "./initialBanner.css";
 
 import photo_perfil from "./../../assets/photo_perfil.jpeg";
+import ButtonPrimary from "../../components/buttonPrimary";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
-import ButtonPrimary from "../../components/buttonPrimary";
 
 function InitialBanner() {
   return (

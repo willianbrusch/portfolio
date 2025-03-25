@@ -9,47 +9,29 @@
   border: 1px solid var(--primary-color);
 }
 
-/* .fullcolor {
+.fullcolor {
   background-color: var(--primary-color);
   color: white;
 }
 
 .fullcolor:hover {
-  background-color: var(--background-color);
-  color: var(--secondary-color);
-}
-
-.no-color {
-  color: var(--primary-color);
-}
-
-.no-color:hover {
-  background-color: var(--secondary-color);
-  color: white;
-} */
-
-.fullcolor {
-  background-color: #004d43; /* Cor base */
-  color: white;
-}
-
-.fullcolor:hover {
-  background-color: #006a5b; /* Fica mais claro no hover */
+  background-color: #006a5b;
 }
 
 .fullcolor:active {
-  transform: scale(0.99); /* Dá um efeito de clique */
+  transform: scale(0.99);
 }
 
 /* Botão sem fundo */
 .no-color {
   background-color: transparent;
-  color: #004d43;
-  border-color: #004d43;
+  color: var(--text-color-secondary);
+  border-color: var(--text-color-secondary);
 }
 
 .no-color:hover {
   background-color: #006a5b;
+  border-color: #006a5b;
   color: white;
 }
 
