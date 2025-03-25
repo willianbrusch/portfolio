@@ -1,4 +1,4 @@
-# 🃏 Portifólio
+# Portifólio
 
 Este é meu site portifólio criado para compartilhar um pouco sobre minhas experiências, carreira.
 
