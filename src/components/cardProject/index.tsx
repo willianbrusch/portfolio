@@ -34,6 +34,7 @@ function CardProject({ project }: CardProjectProps) {
         className="github-card-button"
         href={project.repository}
         target="_blank"
+        rel="noopener noreferrer"
       >
         <p>Github</p>
         <FaGithub size={20} />
