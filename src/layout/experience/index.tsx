@@ -71,8 +71,8 @@ function Experience() {
           ))}
         <div className="experience-button-container">
           <ButtonPrimary
-            link="./../../../public/assets/Willian_Brusch.pdf"
-            download="willian_brusch_cv.pdf"
+            link="/assets/willian_brusch_cv.docx"
+            download="willian_brusch_cv.docx"
           >
             Baixar Currículo
             <FaCloudDownloadAlt size={18} />
