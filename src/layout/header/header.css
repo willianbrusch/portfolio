@@ -26,6 +26,8 @@
 
   background-color: var(--background-color-nav);
   color: var(--text-color-primary);
+
+  cursor: pointer;
 }
 
 .nav a:hover {
