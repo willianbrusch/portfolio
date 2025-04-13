@@ -6,6 +6,7 @@ import CardProject from "../../components/cardProject";
 
 const projects = [
   {
+    id: 1,
     name: "Portifólio",
     description:
       "Projeto desenvolvido para apresentar meu portfólio pessoal e destacar minhas habilidades e experiências.",
@@ -21,8 +22,8 @@ function Projects() {
         <h3>Projetos</h3>
         <div className="projects-container">
           {projects &&
-            projects.map((project, index) => (
-              <CardProject key={index} project={project} />
+            projects.map((project) => (
+              <CardProject key={project.id} project={project} />
             ))}
         </div>
       </SectionContainer>

@@ -51,8 +51,8 @@ function CardExperience({ company }: CardExperienceProps) {
           className="job-description-text"
           onClick={() => setShowText(!showText)}
         >
-          {company.description.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
+          {company.description.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
           ))}
         </motion.div>
       ) : (

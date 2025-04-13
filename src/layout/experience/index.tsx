@@ -8,6 +8,7 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 
 const companys = [
   {
+    id: 1,
     companyName: "Recuperi",
     companyImage: "recuperi.png",
     position: "Desenvolvedor Backend",
@@ -20,6 +21,7 @@ const companys = [
     ],
   },
   {
+    id: 2,
     companyName: "Fumi.co",
     companyImage: "fumico.png",
     position: "Desenvolvedor Fullstack",
@@ -30,6 +32,7 @@ const companys = [
     ],
   },
   {
+    id: 3,
     companyName: "Kenzie Academy",
     companyImage: "kenzie.png",
     position: "Supervisor React",
@@ -39,6 +42,7 @@ const companys = [
     ],
   },
   {
+    id: 4,
     companyName: "Kenzie Academy",
     companyImage: "kenzie.png",
     position: "Facilitador React",
@@ -50,6 +54,7 @@ const companys = [
     ],
   },
   {
+    id: 5,
     companyName: "Kenzie Academy",
     companyImage: "kenzie.png",
     position: "Monitor",
@@ -66,8 +71,8 @@ function Experience() {
       <SectionContainer name="experience">
         <h3>Experiência</h3>
         {companys &&
-          companys.map((company, index) => (
-            <CardExperience key={index} company={company} />
+          companys.map((company) => (
+            <CardExperience key={company.id} company={company} />
           ))}
         <div className="experience-button-container">
           <ButtonPrimary

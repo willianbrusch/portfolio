@@ -25,8 +25,8 @@ function CardProject({ project }: CardProjectProps) {
         <br />
         <div>
           {project.technologies &&
-            project.technologies.map((technology, index) => (
-              <span key={index}>{technology}</span>
+            project.technologies.map((technology) => (
+              <span key={technology}>{technology}</span>
             ))}
         </div>
       </div>
